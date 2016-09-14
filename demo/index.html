@@ -9,7 +9,7 @@
     <script src="../node_modules/noodle/dist/bundle.js"></script>
     <script src="../dist/bundle.js"></script>
     <script>
-    Noodle("#test").log().$animateIn("fadeIn",function($){
+    Noodle("#test").$animateIn("fadeIn",function($){
         $.$animateOut("fadeOut",function($){
             $.$remove();
         });
