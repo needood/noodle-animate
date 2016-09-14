@@ -1,5 +1,4 @@
 require("../build/animate.min");
-var each = require("./each");
 Noodle = require("noodle");
 var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 Noodle.setMutator("animateIn",function(animationName,cb){
