@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div id="test">test</div>
+    <script src="../node_modules/noodle/dist/bundle.js"></script>
+    <script src="../dist/bundle.js"></script>
+    <script>
+    Noodle("#test").log().$animate("fadeIn",function($){
+        $.$remove();
+    });
+    </script>
+</body>
+</html>
