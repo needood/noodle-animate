@@ -4,14 +4,14 @@ var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimation
 Noodle.setMutator("animateIn",function(animationName,cb){
     var self = this;
     this.$addClass('animated ' + animationName);
-    this.$one(animationEnd, function() {
+    this.$once(animationEnd, function() {
         cb(self);
     });
 });
 Noodle.setMutator("animateOut",function(animationName,cb){
     var self = this;
     this.$addClass('animated ' + animationName);
-    this.$one(animationEnd, function() {
+    this.$once(animationEnd, function() {
         self.$removeClass('animated ' + animationName);
         cb(self);
     });
