@@ -2,7 +2,7 @@
   "name": "noodle-animate",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "src/index.js",
   "devDependencies": {
     "animate.css": "^3.5.2",
     "browserify": "^13.1.0",

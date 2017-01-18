@@ -16,3 +16,5 @@ Noodle.setMutator("animateOut",function(animationName,cb){
         cb(self);
     });
 });
+
+module.exports = Noodle;
